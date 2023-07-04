@@ -1,0 +1,48 @@
+h1 {
+  margin-bottom: 0;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+}
+
+.navLinks a {
+  padding: 1rem;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: rgba(206, 191, 155, 0.62);
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+.navLinks a:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+.navLinks a:active {
+  background-color: black;
+}
+
+.logout {
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+.logout button {
+  padding: 1rem;
+  background-color: rgba(206, 191, 155, 0.62);
+  color: #3d3d3d;
+  border-radius: 4px;
+}
+
+.logout button:hover {
+  color: white;
+  background-color: #42545C;
+}
+
+.logout button:active {
+  background-color: black;
+}

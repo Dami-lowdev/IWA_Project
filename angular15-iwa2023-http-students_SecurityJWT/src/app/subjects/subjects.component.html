@@ -1,0 +1,42 @@
+<h2>Subjects</h2>
+<!--<div><input type="text" [(ngModel)]="searchTerm" placeholder="Search by subject name">
+  <button (click)="searchSubjects()">Search</button>
+
+  <br></div>-->
+
+<div >
+  <label>Course Name<br>
+    <input #courseName />
+  </label>
+<br>
+
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(courseName.value); courseName.value=''">
+    add
+  </button>
+</div>
+
+  <br><br><div>
+  <label>
+    <input type="radio" name="sortCriteria" value="course" (change)="sortSubjectsBy('course')" checked>
+    Sort by Course
+  </label>
+  <label>
+    <input type="radio" name="sortCriteria" value="id" (change)="sortSubjectsBy('id')">
+    Sort by ID
+  </label>
+</div>
+
+
+
+<ul>
+  <li *ngFor="let subject of subjectList">
+    <span class="badge">{{subject.id}}</span> {{ subject.course }}
+    <button *ngIf="authority === 'admin'" title="delete" (click)="delete(subject)">delete</button>
+    <button *ngIf="authority === 'admin'" title="update" (click)="update(courseName.value, subject);
+                            courseName.value=''">
+      Update
+    </button>
+  </li>
+</ul>
+<button *ngIf="authority === 'admin'" title="delete all" (click)="deleteAll()">delete all</button>

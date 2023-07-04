@@ -1,0 +1,13 @@
+<div class="navLinks">
+  <a [routerLink]="['/admin']">admin</a>
+  <a [routerLink]="['/students']">Students</a>
+  <a [routerLink]="['/subjects']">Subjects</a>
+  <div class="logout">
+    <button (click)="logout()">Logout</button>
+  </div>
+</div>
+<h4>Content from Server welcome!!!</h4>
+{{board}}
+{{errorMessage}}
+
+

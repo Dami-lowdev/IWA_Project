@@ -1,0 +1,76 @@
+/* Add some spacing and background color to the page header */
+.page-header {
+  background-color: rgba(206, 191, 155, 0.62);
+  padding: 20px;
+  color: rgba(27, 27, 133, 0.54);
+  text-align: center;
+}
+
+/* Style the title in the page header */
+.page-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Style the navigation links */
+.navLinks a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.navLinks a:hover {
+  color: rgba(206, 191, 155, 0.62);
+}
+.navLinks a:hover {
+  background-color: rgba(206, 191, 155, 0.62);
+}
+
+/* Style the navigation bar */
+.navbar {
+  background-color: #333;
+  color: rgba(27, 27, 133, 0.54);
+}
+
+.navbar .container-fluid {
+  padding: 10px;
+}
+
+/* Style the navigation items */
+.navbar .nav-link {
+  color: #efe7e7;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar .nav-link:hover {
+  background-color: #555;
+}
+
+.navbar .nav-item.active .nav-link {
+  background-color: #555;
+}
+
+/* Add some spacing to the content section */
+#content {
+  margin-top: 20px;
+}
+
+.container {
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+/* Add some hover effect to the navigation links in the content section */
+.container a {
+  color: #333;
+  text-decoration: none;
+}
+
+.container a:hover {
+  color: #883a3a;
+}
